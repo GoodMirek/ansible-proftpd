@@ -1,9 +1,10 @@
 galaxy_info:
-  author: The Galaxy Project
-  description: Install and Configure ProFTPD (optionally, for Galaxy Servers).
-  company: The Galaxy Project
+  author:
+    - The Galaxy Project
+    - GoodMirek
+  description: Install and Configure ProFTPD, including SFTP
   license: AFL v3.0
-  min_ansible_version: 1.8
+  min_ansible_version: 2.3
   platforms:
   - name: Ubuntu
     versions:
@@ -13,6 +14,7 @@ galaxy_info:
     - wily
     - xenial
     - yakkety
+    - bionic
   - name: Debian
     versions:
     - wheezy

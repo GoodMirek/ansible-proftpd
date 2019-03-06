@@ -1,13 +1,17 @@
 proftpd
 =======
 
-An [Ansible][ansible] role for installing and managing [proftpd][proftpd] servers. This role is designed to facilitate
-the installation of ProFTPD for [Galaxy][galaxy] servers, and can configure ProFTPD to authenticate users against the
-Galaxy PostgreSQL database. It can also configure TLS for FTPS (**note: NOT SFTP**).
+Fork notice: This forked version also configures SFTP
+
+An [Ansible][ansible] role for installing and managing [proftpd][proftpd] servers. This role can facilitate
+the installation of ProFTPD for [Galaxy Project][galaxy] servers and can configure ProFTPD to authenticate users against the
+Galaxy PostgreSQL database. It can also configure TLS for FTPS and SFTP.
+Note: [Galaxy Project][galaxy] is not related to [Ansible Galaxy][ansible-galaxy].
 
 [ansible]: http://www.ansible.com/
 [proftpd]: http://www.proftpd.org/
 [galaxy]: http://galaxyproject.org/
+[ansible-galaxy]: https://galaxy.ansible.com/
 
 Requirements
 ------------
@@ -187,3 +191,4 @@ Author Information
 ------------------
 
 [Nate Coraor](https://github.com/natefoo)
+Modified by [Mirek Svoboda](https://github.com/GoodMirek)
