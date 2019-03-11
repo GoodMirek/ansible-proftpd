@@ -12,6 +12,8 @@
 - name: Add include statement to proftpd.conf
   lineinfile:
     name: "{{ proftpd_config_file }}"
+    regexp: "^Include {{ proftpd_config_include_dir }}"
+    state: present
     insertafter: EOF
     line: "Include {{ proftpd_config_include_dir }}/*.conf"
   notify:
