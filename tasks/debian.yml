@@ -7,6 +7,7 @@
   with_items:
     - proftpd-basic
     - proftpd-mod-pgsql
+    - proftpd-mod-vroot
   when: item != 'proftpd-mod-pgsql' or proftpd_galaxy_auth is defined
 
 - name: Add include statement to proftpd.conf
