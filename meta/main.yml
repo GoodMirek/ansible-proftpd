@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: proftpd
   author:
     - The Galaxy Project
     - GoodMirek
